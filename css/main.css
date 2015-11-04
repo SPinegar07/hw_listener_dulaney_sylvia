@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    background-color: #a2fdd1;
+}
+.container	{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.resize {
+    box-sizing:border-box;
+    width:49%;
+    float:right;
+    padding:4em;
+}
+.resize:first-child {float:left;}
+.resize input {
+    box-sizing:border-box;
+    width:100%;
+    padding:8px;
+    border:2px solid #691443;
+}
+.resize textarea	{
+	box-sizing:border-box;
+    width:100%;
+    padding:8px;
+    border:2px solid #691443;
+
+}
+label	{
+	font-family: 'Poiret One', cursive;
+	color: #691443;
+	font-size: 22px;
+}
+.btn {
+	font-family: 'Poiret One', cursive;
+	color: #691443;
+	font-size: 22px;
+}
