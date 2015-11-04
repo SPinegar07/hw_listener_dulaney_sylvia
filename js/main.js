@@ -1,10 +1,18 @@
-var click = 0;
+//var heading = document.getElementById( 'topHeading' );
+//var numClicks = 0;
 
-function countClick(){
-	click++;
-}
+//heading.addEventListener( 'click', function buttonClick ()	{
+//	numClicks = numClicks +1;
 
-function modifyHTML()	{
-	var click = document.getElementByID('countClick');
-	heading.innerHTML = "This is click number' + 'countClick"
-}
+
+var x = 0;
+var heading = document.getElementById( 'topHeading')
+
+function clickCounter()	{
+	x = x+1;
+//	document.getElementById("p1").innerHTML = x;
+	var myElement = document.createElement( 'p');
+	myElement.innerHTML = '<p>This is click number ' + x + '</p>';
+	document.getElementById( 'topHeading').appendChild( myElement );
+};
+heading.addEventListener( 'click', clickCounter );
