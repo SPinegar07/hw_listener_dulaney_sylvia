@@ -25,9 +25,30 @@ heading.addEventListener( 'click', clickCounter );
 //    'click', stopDefAction, false
 //);
 
-var formLog = document.getElementById('firstname');
+var formLogFirstName = document.getElementById('firstname');
 
-document.querySelector('form.mainForm').addEventListener('submit', function (e) {
+document.querySelector('form.formMain').addEventListener('submit', function (e) {
 	e.preventDefault();
-	console.log(formLog.value);    
+	console.log(formLogFirstName.value);    
+});
+
+var formLogLastName = document.getElementById('lastname');
+
+document.querySelector('form.formMain').addEventListener('submit', function (e) {
+	e.preventDefault();
+	console.log(formLogLastName.value);    
+});
+
+var formLogEmail = document.getElementById('email');
+
+document.querySelector('form.formMain').addEventListener('submit', function (e) {
+	e.preventDefault();
+	console.log(formLogEmail.value);    
+});
+
+var formLogMessage = document.getElementById('message');
+
+document.querySelector('form.formMain').addEventListener('submit', function (e) {
+	e.preventDefault();
+	console.log(formLogMessage.value);    
 });
