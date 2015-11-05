@@ -12,13 +12,13 @@
 <body>
 	<h1 id="topHeading">Click Me</h1>
 		<div class="container">
-			<form class="mainForm">
+			<form id="mainForm">
 				<div class="resize">
-					<p><label id="firstname" >First Name </label><input type: "text" name="firstname" required> </p>
-					<p><label id="lastname">Last Name </label><input type: "text" name="lastname" required> </p>
-					<p><label id="email">Email </label><input type:"email" name="email" required></p>
-					<p><label id="message">Message</label></p>
-					<p><textarea id="message"required>
+					<p><label for="firstname" >First Name </label><input type: "text" name="firstname" id="firstname" required> </p>
+					<p><label for="lastname">Last Name </label><input type: "text" name="lastname" id="lastname" required> </p>
+					<p><label for="email">Email </label><input type:"email" name="email" id="email" required></p>
+					<p><label for="message">Message</label></p>
+					<p><textarea name="message" id="message" required>
 					</textarea>
 					</p>
 					<p><input type="submit" id="submitbtn" class="btn"></p>
