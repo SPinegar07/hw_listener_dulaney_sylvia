@@ -70,3 +70,10 @@ function modifyText() {
 }
 var el = document.getElementById("mouseover");
 el.addEventListener("mouseover", modifyText, false);
+
+//listens for double click and logs the time
+document.getElementById("myBtn2").addEventListener("dblclick", displayDate);
+
+function displayDate() {
+    document.getElementById("demo2").innerHTML = Date();
+}
