@@ -52,3 +52,21 @@ document.querySelector('form.formMain').addEventListener('submit', function (e) 
 	e.preventDefault();
 	console.log(formLogMessage.value);    
 });
+
+// Change button color, listens for click, changes the background color of a button
+
+document.getElementById("myBtn").addEventListener("click", function(){
+    this.style.backgroundColor = "#C8ADFF";
+});
+
+// Listens for mouse over the table to change the text from wipe on to wipe off
+function modifyText() {
+  var t2 = document.getElementById("t2");
+  if (t2.firstChild.nodeValue == "Wipe Off") {
+    t2.firstChild.nodeValue = "Wipe On";
+  } else {
+    t2.firstChild.nodeValue = "Wipe Off";
+  }
+}
+var el = document.getElementById("mouseover");
+el.addEventListener("mouseover", modifyText, false);
